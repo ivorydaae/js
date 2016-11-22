@@ -3,7 +3,7 @@ function pic(){
 	var height = 1000;
 
 	var addsvg = d3.select(".middleRight").append("svg").attr("width",1000).attr("height",1000)
-	.append("circle").attr("cx",500).attr("cy",290).attr("r",90).attr("fill","brown")
+	.append("circle").attr("cx",500).attr("cy",290).attr("r",90).attr("fill","brown");
 
 
 	//  <circle cx="500" cy="290" r="90" fill="brown" />
@@ -47,14 +47,5 @@ function pic(){
 	//       .call(d3.axisBottom(x));
 	//   svg.append("g")
 	//       .call(d3.axisLeft(y));
-
-	});
-
-
-
-
-
-
-
 
 }
