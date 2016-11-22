@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="style/D.css">
+  <script type="text/javascript" src = script/aaa.js ></script>
+  <script src="https://ivorydaae.github.io/js/man1.js"></script>
+</head>
+<body>
+
+
+
+<script type="text/javascript">
+var parseTime = d3.timeParse("%d-%b-%y");
+d3.csv("./stocks.csv", 
+
+  function(data)
+  {
+    data.forEach(
+      function(d)
+      {
+        d.date = parseTime(d.date);
+        d.close = +d.close;
+        console.log(d);
+      }
+    );
+  }
+
+);
+
+  
+var svgContainer = d3 .selectAll(".list") .append("svg") .attr("height",1000) .attr("width", 1000);
+
+svgContainer.append("circle") .attr('cx', 60).attr('cy', 60).attr('r', 50);
+
+
+</script>
+    <div class="top">網站名稱</div>
+    <div class="middleLeft">檢索類別:國家、價錢、地點...</div>  
+    <div class="middleRight">
+      <div class="list" id = "search">站內搜尋</div>
+      <div class="list">搜尋結果</div>
+      <div class="list">搜尋結果</div>
+      <div class="list">搜尋結果</div>
+      <div class="list">搜尋結果</div>
+      <div class="list">搜尋結果</div>
+      <div class="list">搜尋結果</div>
+    </div>  
+
+<!-- <svg height="1000" width="1000">
+
+
+  <circle cx="500" cy="290" r="90" fill="brown" />
+ <circle cx="500" cy="150" r="50"  fill="brown" />
+
+ <rect width="200" height="50" x="585" y="220"    fill= "brown"/>
+<rect width="200" height="50" x="213" y="220"    fill= "brown"/>
+
+</svg>
+ -->
+  
+</body>
+</html>
