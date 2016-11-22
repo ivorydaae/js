@@ -3,8 +3,8 @@ function pic(){
 	var height = 1000;
 	var addsvg = d3.select
 	var margin = {top: 20, right: 20, bottom: 30, left: 50},
- 	   width = 960 - margin.left - margin.right,
-  	  height = 500 - margin.top - margin.bottom;
+ 	  	width = 960 - margin.left - margin.right,
+  	  	height = 500 - margin.top - margin.bottom;
 	var parseTime = d3.timeParse("%d-%b-%y");
 	var x = d3.scaleTime().range([0, width]);
 	var y = d3.scaleLinear().range([height, 0]);
