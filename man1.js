@@ -1,8 +1,9 @@
+
 function pic(){
 	var width = 1000;
 	var height = 1000;
 
-	var addsvg = d3.select(".middleRight").append("svg").attr("width",1000).attr("height",1000)
+	var addsvg = d3.select("body").append("svg").attr("width",1000).attr("height",1000)
 	.append("circle").attr("cx",500).attr("cy",290).attr("r",90).attr("fill","brown");
 
 
